@@ -1,0 +1,228 @@
+/* *ЗМІННІ */
+:root {
+    --main-color: #F5F5F5;
+    --second-color: #2F303A;
+    --third-color: #F5F4FA;
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --third-text-color: #FFFFFF;
+    --hover-color: #2196F3;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    color: var(--main-text-color);
+    background-color: var(--third-text-color);
+}
+
+
+/* ^ШАПКА (ЗАГАЛЬНА) */
+.head-block {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.navigation-links {
+    text-decoration: none;
+    color: inherit;
+}
+.contacts-links {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.header-navigation :hover,
+.header-navigation :focus,
+.header-contacts :hover,
+.header-contacts :focus {
+    color: var(--hover-color);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo .logo-colorize {
+    color: var(--hover-color);
+}
+
+.header-navigation .current {
+    color: var(--hover-color);
+}
+
+
+/* ^ПІДВАЛ (ЗАГАЛЬНИЙ) */
+.foot-block {
+    background-color: var(--second-color);
+}
+.foot-block .logo {
+    color: var(--third-text-color);
+}
+.address-block {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--third-text-color);
+}
+
+.footer-contacts :hover,
+.footer-contacts :focus {
+    color: var(--hover-color);
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    color: #FFFFFF96;
+}
+
+
+
+/* &СПІЛЬНІ ЕЛЕМЕНТИ */
+/* заголовки секцій */
+.section-header {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+/* приховані заголовки */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/* списки */
+.list {
+    list-style: none;
+}
+
+
+
+/* ?СТОРІНКА "СТУДІЯ" */
+/* ^БЛОК-ГЕРОЙ */
+.hero {
+    background-color: var(--second-color);
+}
+
+.main-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--third-text-color);
+}
+
+.main-button {
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-family:inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--third-text-color);
+}
+
+
+
+/* ^БЛОК-1 */
+.features-list-header {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.features-list-text {
+    width: 270px;
+    height: 72px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+
+
+/* ^БЛОК-3 */
+.third-block {
+    background-color: var(--third-color);
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+.position {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secondary-text-color);
+}
+
+
+
+/* ?СТОРІНКА "ПОРТФОЛІО" */
+/* ^БЛОК ПОРТФОЛІО */
+.filter{
+    width: 125px;
+    height: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--third-color);
+
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.button-list-item :hover,
+.button-list-item :focus {
+    color: var(--third-text-color);
+    background-color: var(--hover-color);
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-header {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+}
+
+.card-description {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
