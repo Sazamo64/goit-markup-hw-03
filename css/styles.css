@@ -7,6 +7,7 @@
     --secondary-text-color: #757575;
     --third-text-color: #FFFFFF;
     --hover-color: #2196F3;
+    --border-color
 }
 
 
@@ -20,6 +21,7 @@ body {
 
 /* ^ШАПКА (ЗАГАЛЬНА) */
 .head-block {
+    border-bottom: 1px solid black;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -30,9 +32,15 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
 .contacts-links {
     text-decoration: none;
     color: var(--secondary-text-color);
+}
+
+.header-navigation,
+.header-contacts {
+    display: flex;
 }
 
 .header-navigation :hover,
@@ -42,7 +50,15 @@ body {
     color: var(--hover-color);
 }
 
+.header-navigation > .item:not(:last-child),
+.header-contacts > .item:not(:last-child) {
+    margin-right: 50px;
+}
 .logo {
+    width: 145px;
+    height: 31px;
+    margin-right: 93px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -58,6 +74,19 @@ body {
 
 .header-navigation .current {
     color: var(--hover-color);
+}
+
+.head-group {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 215px;
+    padding-right: 215px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-panel {
+    margin-right: auto;
 }
 
 
@@ -92,9 +121,14 @@ body {
 /* &СПІЛЬНІ ЕЛЕМЕНТИ */
 /* заголовки секцій */
 .section-header {
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    
 }
 /* приховані заголовки */
 .visually-hidden {
@@ -111,9 +145,21 @@ body {
 }
 /* списки */
 .list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
-
+/* основний контейнер */
+.container {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* основні секції */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 
 /* ?СТОРІНКА "СТУДІЯ" */
@@ -122,7 +168,14 @@ body {
     background-color: var(--second-color);
 }
 
+.hero-group {
+    padding: 200px 452px;
+    text-align: center;
+}
+
 .main-header {
+    margin: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -150,6 +203,8 @@ body {
 
 /* ^БЛОК-1 */
 .features-list-header {
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -158,6 +213,7 @@ body {
 .features-list-text {
     width: 270px;
     height: 72px;
+    margin: 0;
 
     font-size: 14px;
     line-height: 1.71;
@@ -165,6 +221,28 @@ body {
     color: var(--secondary-text-color);
 }
 
+.qualities {
+    display: flex;
+    justify-content: center;
+}
+.qualities > .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+/* ^БЛОК-2 */
+.special-section {
+    padding-top: 0;
+}
+
+.activities {
+    display: flex;
+    justify-content: center;
+}
+.activities > .item:not(:last-child) {
+    margin-right: 30px;
+}
 
 
 /* ^БЛОК-3 */
@@ -172,6 +250,13 @@ body {
     background-color: var(--third-color);
 }
 
+.team {
+    display: flex;
+    justify-content: center;
+}
+.team > .item:not(:last-child) {
+    margin-right: 30px;
+}
 .name {
     font-weight: 500;
     font-size: 16px;
