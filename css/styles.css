@@ -30,11 +30,15 @@ body {
 }
 
 .navigation-links {
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-decoration: none;
     color: inherit;
 }
 
 .contacts-links {
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-decoration: none;
     color: var(--secondary-text-color);
 }
@@ -79,10 +83,7 @@ body {
 }
 
 .head-group {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-left: 215px;
-    padding-right: 215px;
+    height: 80px;
     display: flex;
     align-items: center;
 }
@@ -94,9 +95,11 @@ body {
 
 /* ^ПІДВАЛ (ЗАГАЛЬНИЙ) */
 .foot-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--second-color);
 }
-.footer-group .logo {
+.foot-block .logo {
     margin-right: 0;
     margin-bottom: 20px;
     color: var(--third-text-color);
@@ -123,11 +126,6 @@ body {
     margin-top: 9px;
 }
 
-.footer-group {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 215px;
-}
 
 
 /* &СПІЛЬНІ ЕЛЕМЕНТИ */
@@ -163,30 +161,39 @@ body {
 }
 /* основний контейнер */
 .container {
-    width: 1600px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* основні секції */
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+/* зображення IMG */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* ?СТОРІНКА "СТУДІЯ" */
 /* ^БЛОК-ГЕРОЙ */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
     background-color: var(--second-color);
 }
 
-.hero-group {
-    padding: 200px 452px;
-    text-align: center;
-}
-
 .main-header {
+    width: 696px;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -270,11 +277,7 @@ body {
 .team > .item:not(:last-child) {
     margin-right: 30px;
 }
-.team img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 .name {
     margin: 0;
     margin-bottom: 10px;
@@ -310,10 +313,6 @@ body {
 
 /* ?СТОРІНКА "ПОРТФОЛІО" */
 /* ^БЛОК ПОРТФОЛІО */
-.portfolio-group {
-    padding-left: 215px;
-    padding-right: 215px;
-}
 .buttons {
     margin-bottom: 50px;
     display: flex;
@@ -386,10 +385,4 @@ body {
     border-bottom: 1px solid var(--cards-border);
     border-left: 1px solid var(--cards-border);
     border-right: 1px solid var(--cards-border);
-}
-
-.cards img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
